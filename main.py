@@ -2,7 +2,7 @@
 
 import imageio.v3 as iio
 
-def gif_animation(pic_1, pic_2, pic_3, pic_4):
+def gif_animation(pic_1, pic_2, pic_3, pic_4, gif_name_file):
     '''A function to process a collection of images into a GIF'''
     
     filenames = [pic_1, pic_2, pic_3, pic_4]
@@ -11,6 +11,6 @@ def gif_animation(pic_1, pic_2, pic_3, pic_4):
     for filenames in filenames:
         images.append(iio.imread(filenames))
 
-    iio.imwrite('result_gif.gif', images, duration=500, loop=0)
+    iio.imwrite(gif_name_file, images, duration=500, loop=0)
 
-gif_animation("dino1.png", "dino2.png", "dino3.png", "dino4.png")
+gif_animation("dino1.png", "dino2.png", "dino3.png", "dino4.png", "result_gif.gif)
