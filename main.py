@@ -13,4 +13,4 @@ def gif_animation(pic_1, pic_2, pic_3, pic_4, gif_name_file):
 
     iio.imwrite(gif_name_file, images, duration=500, loop=0)
 
-gif_animation("dino1.png", "dino2.png", "dino3.png", "dino4.png", "result_gif.gif)
+gif_animation("dino1.png", "dino2.png", "dino3.png", "dino4.png", "result_gif.gif")
